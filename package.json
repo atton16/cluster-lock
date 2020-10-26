@@ -1,5 +1,5 @@
 {
-  "name": "atton16-cluster-lock",
+  "name": "@atton16/cluster-lock",
   "version": "1.0.0",
   "description": "A lock implementation for both single-thread and clustered Node.JS environment.",
   "main": "dist/index.js",

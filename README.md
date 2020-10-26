@@ -1,4 +1,4 @@
-# cluster-lock
+# @atton16/cluster-lock
 
 A lock implementation for both single-thread and clustered Node.JS environment.
 
@@ -7,7 +7,7 @@ This is the simple lock implementation and might not be suitable for production 
 ## Installation
 
 ```bash
-npm install atton16-cluster-lock
+npm install @atton16/cluster-lock
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install atton16-cluster-lock
 ### Single Process
 
 ```typescript
-import { Lock } from 'atton16-cluster-lock';
+import { Lock } from '@atton16/cluster-lock';
 
 const lock = new Lock('read-car');
 
@@ -30,7 +30,7 @@ lock.acquire().then(() => {
 
 ```typescript
 import cluter from 'cluster';
-import { Lock } from 'atton16-cluster-lock';
+import { Lock } from '@atton16/cluster-lock';
 
 if (cluster.isMaster) {
   const lock = new Lock('read-car'); // master lock instance is required
